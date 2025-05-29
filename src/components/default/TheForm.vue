@@ -78,11 +78,18 @@ defineProps({
                 "comment":this.valueComment
             })
 
+            alert(this.valueName + "! Your comment is published");
+
             this.erro="";
             this.valueName = "";
             this.valueComment = "";
+       },
 
-       }
+
+        deleteComment (index){
+            this.comments.splice(index, 1)
+            alert("Comment is Deleted!");
+        }
     }
   }
 
